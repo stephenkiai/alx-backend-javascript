@@ -11,8 +11,11 @@ export default async function asyncUploadUser() {
       user: userResponse,
     };
   } catch (error) {
-    // Handle any errors
+    // object with null values if error present
     console.error('Error in asyncUploadUser:', error);
-    throw error;
+    return {
+      photo: null,
+      user: null,
+    };
   }
 }
