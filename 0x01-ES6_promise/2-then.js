@@ -4,7 +4,7 @@ export default function handleResponseFromAPI(promise) {
       // Log message for resolution
       console.log('Got a response from the API');
 
-      //object for resolution
+      // object for resolution
       return {
         status: 200,
         body: 'success',
@@ -14,7 +14,7 @@ export default function handleResponseFromAPI(promise) {
       // Log message for rejection
       console.error('Got an error from the API');
 
-      //empty Error object for rejection
+      // empty Error object for rejection
       return new Error();
     });
 }
