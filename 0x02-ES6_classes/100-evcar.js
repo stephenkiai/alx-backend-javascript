@@ -14,7 +14,6 @@ export default class EVCar extends Car {
 
   cloneCar() {
     const clonedCar = this[cloneSymbol]();
-    Object.setPrototypeOf(clonedCar, Object.getPrototypeOf(this));
     return clonedCar;
   }
 }
