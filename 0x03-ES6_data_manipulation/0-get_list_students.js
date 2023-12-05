@@ -1,4 +1,5 @@
 export default function getListStudents() {
+  //basic list of objects
   return [
     { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
     { id: 2, firstName: 'James', location: 'Columbia' },
